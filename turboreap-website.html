@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurboREAP - REAP Grant Writing Service | Up to 50% Funding for Rural Energy</title>
+    <meta name="description" content="TurboREAP simplifies USDA REAP grants for rural businesses and farms. Get up to 50% funding for solar and energy projects with our no-risk grant writing service.">
+    <meta name="keywords" content="REAP grants, rural energy grants, USDA rural grants, solar funding, farm energy grants, renewable energy funding, rural business grants">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="TurboREAP - REAP Grant Writing Service for Rural Energy Projects">
+    <meta property="og:description" content="Simplify USDA REAP grants and get up to 50% funding for your rural energy project. No-risk grant writing for farms and rural businesses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.turboreap.com/">
+    <meta property="og:image" content="https://www.turboreap.com/images/turboreap-social.jpg">
+    <link rel="canonical" href="https://www.turboreap.com/">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "TurboREAP",
+      "description": "REAP grant writing service for rural businesses and agricultural producers",
+      "url": "https://www.turboreap.com",
+      "logo": "https://www.turboreap.com/images/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/turboreap",
+        "https://www.linkedin.com/company/turboreap"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Green Street",
+        "addressLocality": "Rural Town",
+        "addressRegion": "US",
+        "postalCode": "12345",
+        "addressCountry": "US"
+      },
+      "telephone": "+18005551234",
+      "email": "info@turboreap.com",
+      "priceRange": "$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 39.8283,
+          "longitude": -98.5795
+        },
+        "geoRadius": "3000"
+      }
+    }
+    </script>
+    <style>
+        :root {
+            --primary-color: #2c7744;
+            --secondary-color: #5ba179;
+            --accent-color: #f3a738;
+            --light-bg: #f9f9f9;
+            --dark-text: #333;
+            --light-text: #fff;
+            --border-radius: 8px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-text);
+            background-color: var(--light-bg);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 20px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo span {
+            color: var(--accent-color);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav-links a {
+            color: var(--light-text);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .hero {
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--dark-text);
+            font-weight: bold;
+            padding: 12px 24px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #e09424;
+            transform: translateY(-2px);
+        }
+        
+        section {
+            padding: 60px 0;
+        }
+        
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+        }
+        
+        .mission {
+            text-align: center;
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 30px 0;
+        }
+        
+        .mission p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .services {
+            background-color: white;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: var(--light-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            text-align: center;
+        }
+        
+        .service-card h3 {
+            margin: 15px 0;
+            color: var(--primary-color);
+        }
+        
+        .service-icon {
+            font-size: 2rem;
+            color: var(--accent-color);
+        }
+        
+        .business-owners {
+            background-color: var(--light-bg);
+        }
+        
+        .business-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .eligible-projects {
+            background-color: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .eligible-projects h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .eligible-projects ul {
+            list-style-type: none;
+        }
+        
+        .eligible-projects li {
+            padding: 8px 0 8px 25px;
+            position: relative;
+        }
+        
+        .eligible-projects li:before {
+            content: "✓";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+        
+        .benefits {
+            background-color: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .benefits h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .benefits ul {
+            list-style-type: none;
+        }
+        
+        .benefits li {
+            padding: 8px 0 8px 25px;
+            position: relative;
+        }
+        
+        .benefits li:before {
+            content: "•";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+        
+        .testimonials {
+            background-color: white;
+            text-align: center;
+        }
+        
+        .testimonial {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: var(--light-bg);
+            border-radius: var(--border-radius);
+            position: relative;
+        }
+        
+        .testimonial p {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        
+        .customer-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .customer-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ddd;
+            overflow: hidden;
+        }
+        
+        .customer-name {
+            text-align: left;
+        }
+        
+        .customer-name h4 {
+            font-weight: 600;
+        }
+        
+        .customer-name small {
+            color: #666;
+        }
+        
+        .how-it-works {
+            background-color: var(--light-bg);
+        }
+        
+        .steps {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .step {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            align-items: flex-start;
+        }
+        
+        .step-number {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .step-content h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        
+        .qualifications {
+            background-color: white;
+        }
+        
+        .qualification-list {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .qualification-item {
+            background-color: var(--light-bg);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .qualification-icon {
+            background-color: var(--secondary-color);
+            color: var(--light-text);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .cta-section {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        .cta-section h2 {
+            color: var(--light-text);
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: var(--light-text);
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-logo {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .footer-links h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .footer-links ul {
+            list-style-type: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+        }
+        
+        .footer-bottom p {
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+        
+        /* Mobile responsive adjustments */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* For a real site, add a hamburger menu */
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .business-content, 
+            .qualification-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .step {
+                flex-direction: column;
+            }
+            
+            .step-number {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    Turbo<span>REAP</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#qualify">Do I Qualify?</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Simplifying REAP Grants for Rural Energy Projects</h1>
+            <p>Helping farms and rural businesses access up to 50% funding for renewable energy and efficiency improvements.</p>
+            <a href="#qualify" class="cta-button">Check Your Eligibility</a>
+        </div>
+    </section>
+
+    <div class="mission">
+        <div class="container">
+            <p><strong>TurboREAP by Cleaner Greener Future</strong> — Making government grant funding accessible for rural America.</p>
+        </div>
+    </div>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>TurboREAP: The Simple Way to Secure USDA REAP Grant Funding</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>No-Risk REAP Grant Writing</h3>
+                    <p>You only pay when your grant is approved. 90%+ success rate.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔄</div>
+                    <h3>Streamlined Process</h3>
+                    <p>Complete application in days, not weeks or months.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>Maximum Funding</h3>
+                    <p>Our experts ensure you get every dollar you qualify for.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://form.jotform.com/250994639755172" class="cta-button">Start Your REAP Application</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="business-owners">
+        <div class="container">
+            <h2>USDA REAP Grants Fund Rural Solar and Energy Efficiency Projects</h2>
+            <div class="business-content">
+                <div class="eligible-projects">
+                    <h3>Eligible Projects Include:</h3>
+                    <ul>
+                        <li>Solar installations</li>
+                        <li>Energy efficiency upgrades</li>
+                        <li>HVAC improvements</li>
+                        <li>Lighting retrofits</li>
+                        <li>Other energy-saving investments</li>
+                    </ul>
+                </div>
+                <div class="benefits">
+                    <h3>Why Rural Businesses Choose TurboREAP:</h3>
+                    <ul>
+                        <li>Simple, guided application process</li>
+                        <li>No upfront fees - pay only when funded</li>
+                        <li>Expert support from start to finish</li>
+                        <li>Clear timelines and expectations</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://form.jotform.com/250994639755172" class="cta-button">Check Your REAP Eligibility</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+                <p>"They made a scary and complicated government grant process feel easy."</p>
+                <div class="customer-info">
+                    <div class="customer-image">
+                        <img src="/api/placeholder/50/50" alt="Lucas Grounds">
+                    </div>
+                    <div class="customer-name">
+                        <h4>Lucas Grounds</h4>
+                        <small>Rural Business Owner</small>
+                    </div>
+                </div>
+            </div>
+            <p style="margin-top: 30px;">Supporting rural businesses across America with successful REAP grant applications.</p>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>How TurboREAP Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Complete our 5-minute eligibility quiz</h3>
+                        <p>Quickly determine if your project qualifies for REAP funding.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Receive your custom REAP funding estimate</h3>
+                        <p>We'll analyze your project and provide a detailed funding estimate.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>We prepare and submit your REAP application</h3>
+                        <p>Our experts handle all the paperwork and submissions.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Get matched with trusted contractors</h3>
+                        <p>We can connect you with verified installers for your project.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Your project gets funded and installed</h3>
+                        <p>Enjoy the benefits of your funded energy project.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://form.jotform.com/250994639755172" class="cta-button">Check REAP Eligibility Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="qualify" class="qualifications">
+        <div class="container">
+            <h2>Who Qualifies for USDA REAP Grants in 2025</h2>
+            <div class="qualification-list">
+                <div class="qualification-item">
+                    <div class="qualification-icon">✓</div>
+                    <div>Located in rural areas with populations under 50,000</div>
+                </div>
+                <div class="qualification-item">
+                    <div class="qualification-icon">✓</div>
+                    <div>Small businesses with less than $15 million in annual revenue</div>
+                </div>
+                <div class="qualification-item">
+                    <div class="qualification-icon">✓</div>
+                    <div>Agricultural producers (farms, ranches, no size restrictions)</div>
+                </div>
+                <div class="qualification-item">
+                    <div class="qualification-icon">✓</div>
+                    <div>For-profit businesses (non-profits are not eligible)</div>
+                </div>
+                <div class="qualification-item">
+                    <div class="qualification-icon">✓</div>
+                    <div>Property owners or those with long-term leases</div>
+                </div>
+                <div class="qualification-item">
+                    <div class="qualification-icon">✓</div>
+                    <div>Solar, wind, biomass, geothermal, and energy efficiency projects</div>
+                </div>
+            </div>
+            <div style="margin-top: 30px; text-align: center;">
+                <p><strong>REAP Grant Deadline:</strong> September 30, 2025. Don't miss out on this funding opportunity!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Interested in REAP grant funding for your energy project?</h2>
+            <a href="https://form.jotform.com/250994639755172" class="cta-button">Check Eligibility</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">TurboREAP</div>
+                    <p>A division of Cleaner Greener Future</p>
+                    <p>Simplifying USDA REAP grants for rural America since 2020</p>
+                    <p>Serving farmers and rural businesses in all 50 states</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">REAP Grant Services</a></li>
+                        <li><a href="#how-it-works">REAP Grant Process</a></li>
+                        <li><a href="#qualify">REAP Eligibility</a></li>
+                        <li><a href="blog.html">REAP Grant Resources</a></li>
+                        <li><a href="faq.html">REAP Grant FAQ</a></li>
+                    </ul>
+                </div>
+                <div id="contact" class="footer-links">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="mailto:info@turboreap.com">info@turboreap.com</a></li>
+                        <li><a href="tel:+18005551234">(800) 555-1234</a></li>
+                        <li>123 Green Street</li>
+                        <li>Rural Town, USA 12345</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TurboREAP by Cleaner Greener Future. All rights reserved.</p>
+                <p>
+                    <a href="#">Privacy Policy</a> | 
+                    <a href="#">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
